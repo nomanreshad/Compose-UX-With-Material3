@@ -195,19 +195,26 @@ fun CustomChatTextField() {
             modifier = Modifier.fillMaxWidth(),
         ) {
             IconButton(onClick = { /* TODO */ }) {
-                Icon(Icons.Default.Add, contentDescription = "Add", tint = Color.White)
+                Icon(
+                    imageVector = Icons.Default.Add,
+                    contentDescription = "Add",
+                    tint = Color.White
+                )
             }
 
             IconButton(onClick = { /* TODO */ }) {
                 Icon(
-                    Icons.Default.AccountCircle,
+                    imageVector = Icons.Default.AccountCircle,
                     contentDescription = "Account",
                     tint = Color.White
                 )
             }
 
             IconButton(onClick = { /* TODO */ }) {
-                Icon(Icons.Default.Face, contentDescription = "Face", tint = Color.White)
+                Icon(
+                    imageVector = Icons.Default.Face,
+                    contentDescription = "Face", tint = Color.White
+                )
             }
 
             Box(
@@ -217,7 +224,11 @@ fun CustomChatTextField() {
                     onClick = { /* TODO */ },
                     modifier = Modifier.align(Alignment.BottomEnd)
                 ) {
-                    Icon(Icons.Default.Search, contentDescription = "Voice", tint = Color.White)
+                    Icon(
+                        imageVector = Icons.Default.Search,
+                        contentDescription = "Voice",
+                        tint = Color.White
+                    )
                 }
             }
         }
